@@ -13,8 +13,8 @@ const Navbar = () => {
                         <div className='md:ml-auto'>
                             <div className='flex space-x-2'>
                                 <a href='/' className='text-white bg-black px-3 py-2 rounded-md hover:text-white hover:bg-gray-900'>Home</a>
-                                <a href='/' className='text-white bg-black px-3 py-2 rounded-md hover:text-white hover:bg-gray-900'>Jobs</a>
-                                <a href='/' className='text-white bg-black px-3 py-2 rounded-md hover:text-white hover:bg-gray-900'>Add Job</a>
+                                <a href='/' className='text-white  px-3 py-2 rounded-md hover:text-white hover:bg-gray-900'>Jobs</a>
+                                <a href='/' className='text-white  px-3 py-2 rounded-md hover:text-white hover:bg-gray-900'>Add Job</a>
 
                             </div>
                         </div>
