@@ -45,7 +45,7 @@ const JobPage = ({ deleteJob }) => {
                             <main>
                                 <div className='bg-white p-6 rounded-lg shadow-md text-center md:text-left'>
                                     <div className='text-gray-500 mb-4'>{job.type}</div>
-                                    <h1 className='text-3xl font-bold mb-4'>{job.ttitle}</h1>
+                                    <h1 className='text-3xl font-bold mb-4'>{job.title}</h1>
                                     <div className='text-gray-500  mb-4 flex align-middle justify-center md:justify-start'>
                                         <FaMapMarker className='text-lg text-orange-700 mr-2' />
                                         <p className='text-orange-700'>{job.location}</p>
@@ -69,7 +69,7 @@ const JobPage = ({ deleteJob }) => {
                                 <p className='my-2 bg-indigo-100 p-2 font-bold'>{job.company.contactPhone}</p>
                                 <div className='bg-white rounded-lg shadow-md mt-6 p-6'>
                                     <h2 className='text-lg font-bold mb-6'>Manage Job</h2>
-                                    <Link to={`/jobs/edit/${job.id}`} className="bg-indigo-500 hover:bg-indigo-600 text-center text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block">Edit Job</Link >
+                                    <Link to={`/edit-job/${job.id}`} className="bg-indigo-500 hover:bg-indigo-600 text-center text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block">Edit Job</Link >
                                     <button onClick={() => onDeleteClick(job.id)} className='bg-red-500 hover:bg-red-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block'>Delete Job</button>
                                 </div>
                             </aside>
